@@ -1,13 +1,60 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #110033;
+  color: #DDCCFF;
+  text-align: center;
+  margin: -10px auto;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.drum-pad {
+  padding: 8.5% 9%;
+  margin: 1%;
+  border-radius: 50%;
+  border: #4411AA solid 5px;
+  background-color: #6633CC;
+  color: #DDCCFF;
+  font-size: 2em;
+  box-shadow: 5px 5px 10px hsla(300, 100%, 50%, 0.25);
+}
+.drum-pad:focus {
+  outline: none;
+}
+#heading {
+  font-family: 'Pushster', cursive;
+  font-size: 2.8em;
+}
+#drum-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  margin: auto;
+  padding: 25px 0;
+  box-shadow: 0px 0px 20px 50px hsla(300, 100%, 50%, 0.25);
+  border-radius: 25px;
+}
+#display-div {
+  height: 35px;
+}
+#display {
+  font-size: 1.4em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: hsla(300, 100%, 50%, 0.6)
+}
+@media (max-width: 1000px) {
+  #drum-container {
+    width: 45%;
+  }
+}
+@media (max-width: 800px) {
+  #drum-container {
+    width: 60%;
+  }
+}
+@media (max-width: 650px) {
+  body {
+    font-size: 0.8rem;
+  }
+  #drum-container {
+    width: 80%;
+  }
 }
